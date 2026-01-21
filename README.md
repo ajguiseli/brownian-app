@@ -1,16 +1,57 @@
-# React + Vite
+# brownian-app — Plano de estudo: Movimento Browniano
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma página interativa com meu cronograma de estudo (Janeiro–Junho 2026) sobre movimento browniano, processos estocásticos e tópicos relacionados, com objetivos práticos (simulações, notebooks, propostas de IC). A interface inclui marcos mensais, roadmap detalhado por semanas (teoria, matemática, programação), checklist de tarefas, bibliografia e próximos passos.
 
-Currently, two official plugins are available:
+Demo
+- Versão pública (GitHub Pages): https://ajguiseli.github.io/brownian-app/
+- Repositório: https://github.com/ajguiseli/brownian-app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O que este repositório contém
+- Um plano de estudos completo (cronograma, tarefas e recursos).
+- UI interativa em React que permite:
+  - navegar por mês;
+  - marcar tarefas como concluídas (checklist local);
+  - visualizar bibliografia, marcos e próximos passos.
 
-## React Compiler
+Como usar a página
+1. Abra a demo: https://ajguiseli.github.io/brownian-app/
+2. Navegue pelos meses usando os botões na seção "Navegação Mensal".
+3. Clique no círculo ao lado de cada tarefa para marcá-la como concluída (o estado atual é mantido apenas na sessão).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Como rodar localmente
+Pré-requisitos: Node.js (versão LTS), npm/yarn.
 
-## Expanding the ESLint configuration
+1. Clone
+   ```bash
+   git clone https://github.com/ajguiseli/brownian-app.git
+   cd brownian-app
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Instale dependências
+   ```bash
+   npm install
+   # ou
+   yarn
+   ```
+
+3. Rode em dev
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+Arquitetura rápida
+- index.html — ponto de entrada (root).
+- src/main.jsx — bootstrap do React.
+- src/App.jsx — componente App (renderiza BrownianMastery).
+- src/BrownianMastery.jsx — componente principal que contém todo o roadmap, UI e lógica de checklist.
+- src/index.css — estilos globais.
+
+Entregáveis esperados
+- Notas semanais (docs/)
+- Notebooks com simulações (notebooks/)
+- Código interativo (src/) e deploy (GitHub Pages)
+- Relatório final / proposta de IC (quando aplicável)
+
+Criado por: ajguiseli

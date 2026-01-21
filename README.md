@@ -10,13 +10,13 @@ O que este repositório contém
 - Um plano de estudos completo (cronograma, tarefas e recursos).
 - UI interativa em React que permite:
   - navegar por mês;
-  - marcar tarefas como concluídas (checklist local);
+  - marcar tarefas como concluídas (checklist persistente);
   - visualizar bibliografia, marcos e próximos passos.
 
 Como usar a página
 1. Abra a demo: https://ajguiseli.github.io/brownian-app/
 2. Navegue pelos meses usando os botões na seção "Navegação Mensal".
-3. Clique no círculo ao lado de cada tarefa para marcá-la como concluída (o estado atual é mantido apenas na sessão).
+3. Clique no círculo ao lado de cada tarefa para marcá-la como concluída. O checklist agora é salvo localmente e persiste mesmo após recarregar a página ou fechar e abrir o navegador.
 
 Como rodar localmente
 Pré-requisitos: Node.js (versão LTS), npm/yarn.

@@ -5,12 +5,21 @@ const BrownianMastery = () => {
   console.log('BrownianMastery component is rendering');
   const [expandedMonth, setExpandedMonth] = useState('jan');
   const [completedTasks, setCompletedTasks] = useState(() => {
-    const saved = localStorage.getItem('brownianMasteryTasks');
-    return saved ? JSON.parse(saved) : {};
+    try {
+      const saved = localStorage.getItem('brownianMasteryTasks');
+      return saved ? JSON.parse(saved) : {};
+    } catch (error) {
+      console.error('Error loading from localStorage:', error);
+      return {};
+    }
   });
 
   useEffect(() => {
-    localStorage.setItem('brownianMasteryTasks', JSON.stringify(completedTasks));
+    try {
+      localStorage.setItem('brownianMasteryTasks', JSON.stringify(completedTasks));
+    } catch (error) {
+      console.error('Error saving to localStorage:', error);
+    }
   }, [completedTasks]);
 
   const toggleTask = (taskId) => {

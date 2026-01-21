@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Calendar, BookOpen, Code, Target, TrendingUp, CheckCircle, Circle } from 'lucide-react';
 
 const BrownianMastery = () => {
   console.log('BrownianMastery component is rendering');
   const [expandedMonth, setExpandedMonth] = useState('jan');
-  const [completedTasks, setCompletedTasks] = useState({});
+  const [completedTasks, setCompletedTasks] = useState(() => {
+    const saved = localStorage.getItem('brownianMasteryTasks');
+    return saved ? JSON.parse(saved) : {};
+  });
+
+  useEffect(() => {
+    localStorage.setItem('brownianMasteryTasks', JSON.stringify(completedTasks));
+  }, [completedTasks]);
 
   const toggleTask = (taskId) => {
     setCompletedTasks(prev => ({

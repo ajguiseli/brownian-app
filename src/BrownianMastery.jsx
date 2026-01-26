@@ -1051,28 +1051,28 @@ const BrownianMastery = () => {
           <h3 className="font-bold text-lg text-gray-900 mb-4"> Estratégia de Estudo</h3>
           <div className="space-y-3 text-sm text-gray-700">
             <div className="flex gap-3">
-              <span className="text-2xl">1️1-</span>
+              <span className="text-2xl"></span>
               <div>
                 <div className="font-semibold">Ciclo semanal consistente</div>
                 <div className="text-gray-600">Teoria (40%) + Matemática (30%) + Código (30%)</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-2xl">2</span>
+              <span className="text-2xl"></span>
               <div>
                 <div className="font-semibold">Validação constante</div>
                 <div className="text-gray-600">Todo código deve reproduzir resultado conhecido</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-2xl">3️</span>
+              <span className="text-2xl"></span>
               <div>
                 <div className="font-semibold">Checkpoints obrigatórios</div>
                 <div className="text-gray-600">Não avance sem completar marcos mensais</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-2xl">4️</span>
+              <span className="text-2xl"></span>
               <div>
                 <div className="font-semibold">Junho = exploração</div>
                 <div className="text-gray-600">Ler literatura recente, testar ideias, definir IC</div>

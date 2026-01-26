@@ -1018,7 +1018,7 @@ const BrownianMastery = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h3 className="font-bold text-lg text-gray-900 mb-4">📚 Bibliografia Progressiva</h3>
+          <h3 className="font-bold text-lg text-gray-900 mb-4">Bibliografia Progressiva</h3>
           <div className="space-y-4 text-sm">
             <div>
               <div className="font-semibold text-blue-800">Jan-Fev (Básico):</div>
@@ -1054,7 +1054,7 @@ const BrownianMastery = () => {
               <span className="text-2xl"></span>
               <div>
                 <div className="font-semibold">Ciclo semanal consistente</div>
-                <div className="text-gray-600">Teoria (40%) + Matemática (30%) + Código (30%)</div>
+                <div className="text-gray-600">Teoria (40%) + Matemática (40%) + Código (20%)</div>
               </div>
             </div>
             <div className="flex gap-3">

@@ -97,7 +97,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você entende: por que partículas se movem aleatoriamente, <r²> ∝ t, gaussiana'
         },
         {
-          week: 'Semanas 3-4 (3-16 Fev)',
+          week: 'Semanas 3-4 (3 Fev - 14 Fev)',
           theory: {
             title: 'Teoria (5h/semana)',
             tasks: [
@@ -118,13 +118,13 @@ const BrownianMastery = () => {
             tasks: [
               {
                 id: 'jan-m3',
-                item: 'Teorema Central do Limite (TCL) - entender PROFUNDAMENTE',
-                resource: 'Bertsekas - Cap. 7 seção 7.4 (pgs 330-350) - por que somas → gaussiana?'
+                item: 'Valor esperado, variância, momentos',
+                resource: 'Sheldon Ross - Cap. 4 seções 4.1 - 4.4 (pgs 145-175) - exercícios 4.1 - 4.20'
               },
               {
                 id: 'jan-m4',
-                item: 'Exercícios: calcular analiticamente <x>, <x²> para random walk',
-                resource: 'Fazer exercícios 7.1-7.10 do Bertsekas - comparar com simulações'
+                item: 'Random walk: calcular <x> e <x²>',
+                resource: 'Aplicar Ross + Jaynes Cap. 3 (pgs 46-80)'
               }
             ]
           },
@@ -151,7 +151,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você sabe: simular random walks, TCL explica gaussiana, visualizar trajetórias'
         }
       ],
-      milestone: '🎯 Intuição sólida sobre browniano + simulações básicas funcionando'
+      milestone: 'Intuição sólida sobre browniano + simulações básicas funcionando'
     },
     {
       month: 'fev',
@@ -161,7 +161,7 @@ const BrownianMastery = () => {
       mainGoal: 'Modelar movimento browniano com atrito + ruído térmico',
       topics: [
         {
-          week: 'Semanas 1-2',
+          week: 'Semanas 1-2 (16 Fev - 27 Fev)',
           theory: {
             title: 'Teoria (5h/semana)',
             tasks: [
@@ -192,8 +192,8 @@ const BrownianMastery = () => {
               },
               {
                 id: 'fev-m2',
-                item: 'Função delta de Dirac (conceitual)',
-                resource: 'Gardiner - Apêndice A seção A.1 (pgs 420-425) ou Riley Cap. 13.1'
+                item: 'Distribuilçoes conjuntas e independência',
+                resource: 'Ross - Cap. 5 seções 5.1-5.3 (pgs 185-215) + Jaynes Cap. 4'
               }
             ]
           },
@@ -220,7 +220,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você resolve Langevin numericamente, entende FDT, valida equipartição'
         },
         {
-          week: 'Semanas 3-4',
+          week: 'Semanas 3-4 (2 Mar - 13 Mar)',
           theory: {
             title: 'Teoria (5h/semana)',
             tasks: [
@@ -241,13 +241,13 @@ const BrownianMastery = () => {
             tasks: [
               {
                 id: 'fev-m3',
-                item: 'EDO: Sistemas de equações, método de variação de parâmetros',
-                resource: 'Boyce - Cap. 3 seções 3.1-3.3 (pgs 150-190) - fazer exercícios 3.1-3.15'
+                item: 'Teorema Central do Limite (Conceitual)',
+                resource: 'Ross - Cap. 7 seções 7.1-7.2 + Jaynes Cap. 7 (pgs 195-220)'
               },
               {
                 id: 'fev-m4',
-                item: 'Processos estocásticos: Ruído branco, correlações',
-                resource: 'Gardiner - Seção 1.4 (pgs 20-30) - <F(t)F(s)> e propriedades'
+                item: 'Processos estocásticos: correlação e ruído branco',
+                resource: 'Ross - Cap. 6 seção 6.1 (pgs 240-260) - Poisson apenas introdutório'
               }
             ]
           },
@@ -274,7 +274,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você domina Langevin analiticamente e numericamente, entende regimes'
         }
       ],
-      milestone: '🎯 Langevin resolvido + código robusto + validações completas'
+      milestone: 'Langevin resolvido + código robusto + validações completas'
     },
     {
       month: 'mar',
@@ -284,7 +284,7 @@ const BrownianMastery = () => {
       mainGoal: 'Entender evolução de P(x,t) e resolver analiticamente casos básicos',
       topics: [
         {
-          week: 'Semanas 1-2',
+          week: 'Semanas 1-2 (16 Mar - 27 Mar)',
           theory: {
             title: 'Teoria (6h/semana)',
             tasks: [
@@ -311,17 +311,17 @@ const BrownianMastery = () => {
               {
                 id: 'mar-m1',
                 item: 'EDP: Equação do calor (difusão)',
-                resource: 'Strauss - Cap. 1 seções 1.1-1.4 (pgs 1-40) - separação de variáveis'
+                resource: 'Strauss - Cap. 1 seções 1.1-1.4 (pgs 1-40)'
               },
               {
                 id: 'mar-m2',
-                item: 'Transformada de Fourier - conceitos básicos',
-                resource: 'Riley - Cap. 13 seções 13.1-13.3 (pgs 450-480) - definição e propriedades'
+                item: 'Conexão random walk → difusão (limite contínuo)',
+                resource: 'Notas próprias + resultados de  <x²> ∝ t'
               },
               {
                 id: 'mar-m3',
-                item: 'Resolver: ∂P/∂t = D ∂²P/∂x² com condição inicial δ(x)',
-                resource: 'Exercício fundamental - fazer completo, comparar com solução fundamental'
+                item: 'Transformada de Fourier - solução da equação de difusão',
+                resource: 'Riley - Cap. 13 seção 13.1 - 13.3 (pgs 450-480)'
               }
             ]
           },
@@ -348,7 +348,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você deriva F-P, resolve difusão livre analítica e numericamente'
         },
         {
-          week: 'Semanas 3-4',
+          week: 'Semanas 3-4 (30 Mar - 10 Abr)',
           theory: {
             title: 'Teoria (6h/semana)',
             tasks: [
@@ -374,13 +374,13 @@ const BrownianMastery = () => {
             tasks: [
               {
                 id: 'mar-m4',
-                item: 'Funções de Green para EDPs',
-                resource: 'Riley - Seção 21.4 (pgs 730-750) - G(x,t;x₀,t₀) para difusão'
+                item: 'Funções de Green para EDPs (difusão)',
+                resource: 'Riley - Seção 21.4 (pgs 730-750) - Green G(x,t;x₀,t₀) da equação do calor'
               },
               {
                 id: 'mar-m5',
                 item: 'Autofunções e autovalores (expansão espectral)',
-                resource: 'Strauss - Cap. 2 (pgs 50-80) - resolver F-P via decomposição'
+                resource: 'Strauss - Cap. 2 (pgs 50-80) - solução da equação de difusão / Fokker–Planck'
               }
             ]
           },
@@ -412,7 +412,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você resolve F-P com potenciais, entende Boltzmann, valida com Langevin'
         }
       ],
-      milestone: '🎯 Fokker-Planck dominado + biblioteca de código sólida'
+      milestone: 'Fokker-Planck dominado + biblioteca de código sólida'
     },
     {
       month: 'abr',
@@ -449,12 +449,12 @@ const BrownianMastery = () => {
               {
                 id: 'abr-m1',
                 item: 'Processos de Markov formais',
-                resource: 'Bertsekas - Cap. 7 seções 7.1-7.3 (pgs 310-360) - cadeias discretas e contínuas'
+                resource: 'Ross - Cap. 6 seções 6.2 - 6.4 (pgs 260-295)'           
               },
               {
                 id: 'abr-m2',
-                item: 'Operadores lineares, autovalores (revisão)',
-                resource: 'Álgebra linear aplicada - matriz de transição, estacionaridade'
+                item: 'Inferência, entropia e física estatística',
+                resource: 'Jaynes - Cap. 8 (pgs 340-270)'
               }
             ]
           },
@@ -476,7 +476,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você entende equação mestra, conexão com F-P'
         },
         {
-          week: 'Semanas 3-4',
+          week: 'Semanas 3-4 (13 Abr - 24 Abr)',
           theory: {
             title: 'Teoria (7h/semana)',
             tasks: [
@@ -503,12 +503,12 @@ const BrownianMastery = () => {
               {
                 id: 'abr-m3',
                 item: 'Funções geradoras',
-                resource: 'Van Kampen - Apêndice II (pgs 450-460) - ferramenta poderosa'
+                resource: 'Van Kampen - Apêndice II (pgs 450-460) - ferramenta para processos estocásticos'
               },
               {
                 id: 'abr-m4',
                 item: 'Transformada de Laplace',
-                resource: 'Riley - Cap. 13 seção 13.6 (pgs 500-520) - para resolver eq. mestra'
+                resource: 'Riley - Cap. 13 seção 13.6 (pgs 500-520) - resolução da equação mestra'
               }
             ]
           },
@@ -535,7 +535,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você domina equação mestra, entende limites de validade'
         }
       ],
-      milestone: '🎯 Formalismo de Van Kampen + aplicações concretas'
+      milestone: 'Formalismo de Van Kampen + aplicações concretas'
     },
     {
       month: 'mai',
@@ -545,7 +545,7 @@ const BrownianMastery = () => {
       mainGoal: 'Conexão profunda entre flutuações microscópicas e dissipação macroscópica',
       topics: [
         {
-          week: 'Semanas 1-2',
+          week: 'Semanas 1-2 (27 Abr - 8 Mai)',
           theory: {
             title: 'Teoria (7h/semana)',
             tasks: [
@@ -571,13 +571,13 @@ const BrownianMastery = () => {
             tasks: [
               {
                 id: 'mai-m1',
-                item: 'Transformadas de Fourier - aplicações',
+                item: 'Transformadas de Fourier - aplicações (espctros)',
                 resource: 'Riley - Seções sobre spectrum, densidades espectrais (pgs 480-500)'
               },
               {
                 id: 'mai-m2',
                 item: 'Funções de correlação temporal',
-                resource: 'Kubo - Apêndice A (pgs 250-270) - C(t) = <A(t)A(0)>, propriedades'
+                resource: 'Kubo - Apêndice A (pgs 250-270) - C(t) = <A(t)A(0)> e propriedades'
               }
             ]
           },
@@ -604,7 +604,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você entende FDT profundamente, aplica a sistemas físicos'
         },
         {
-          week: 'Semanas 3-4',
+          week: 'Semanas 3-4 (11 Mai - 22 Mai)',
           theory: {
             title: 'Teoria (7h/semana)',
             tasks: [
@@ -630,8 +630,8 @@ const BrownianMastery = () => {
             tasks: [
               {
                 id: 'mai-m3',
-                item: 'Análise dimensional e scaling',
-                resource: 'Identificar parâmetros relevantes, leis de escala'
+                item: 'Análise dimensional e leis de escala (scaling)',
+                resource: 'Identificação de parâmetros relevantes, regimes assintóticos, x² ∼ t'
               },
               {
                 id: 'mai-m4',
@@ -663,7 +663,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você conecta flutuações com termodinâmica, domina análise completa'
         }
       ],
-      milestone: '🎯 FDT dominado + base sólida em mecânica estatística'
+      milestone: 'FDT dominado + base sólida em mecânica estatística'
     },
     {
       month: 'jun',
@@ -673,7 +673,7 @@ const BrownianMastery = () => {
       mainGoal: 'Explorar fronteiras, identificar tema para IC, escrever proposta',
       topics: [
         {
-          week: 'Semanas 1-2',
+          week: 'Semanas 1-2 (25 Mai - 5 Jun)',
           theory: {
             title: 'Exploração de Tópicos (8h/semana)',
             tasks: [
@@ -717,7 +717,7 @@ const BrownianMastery = () => {
           checkpoint: 'Você tem 3 ideias concretas de temas para IC'
         },
         {
-          week: 'Semanas 3-4',
+          week: 'Semanas 3-4 (8 Jun - 19 Jun)',
           theory: {
             title: 'Definição de Tema (6h/semana)',
             tasks: [
@@ -766,18 +766,19 @@ const BrownianMastery = () => {
           checkpoint: 'Você tem proposta completa de IC pronta para Agosto!'
         }
       ],
-      milestone: '🎓 PRONTO PARA IC: Tema definido + Proposta escrita + Base sólida'
+      milestone: 'IC: Tema definido + Proposta escrita + Base sólida'
     }
   ];
 
   const milestones = [
-    { month: 'Jan', achievement: 'Intuição sobre browniano, simulações básicas' },
-    { month: 'Fev', achievement: 'Langevin dominado (analítico + numérico)' },
-    { month: 'Mar', achievement: 'Fokker-Planck resolvido, código robusto' },
-    { month: 'Abr', achievement: 'Formalismo Van Kampen, equação mestra' },
-    { month: 'Mai', achievement: 'FDT + mecânica estatística sólida' },
-    { month: 'Jun', achievement: 'Tema de IC definido, proposta escrita' }
-  ];
+  { month: 'Jan', achievement: 'Intuição sobre movimento browniano, random walk e simulações básicas' },
+  { month: 'Fev', achievement: 'Equação de Langevin dominada (analítico + numérico)' },
+  { month: 'Mar', achievement: 'Equação de Fokker–Planck resolvida, código estável e interpretável' },
+  { month: 'Abr', achievement: 'Formalismo de Van Kampen e equação mestra compreendidos' },
+  { month: 'Mai', achievement: 'FDT e correlações temporais integradas à mecânica estatística' },
+  { month: 'Jun', achievement: 'Tema de IC definido, proposta escrita e fundamentada' }
+];
+
 
   const currentRoadmap = roadmap.find(m => m.month === expandedMonth);
 
@@ -1047,31 +1048,31 @@ const BrownianMastery = () => {
         </div>
 
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h3 className="font-bold text-lg text-gray-900 mb-4">🎯 Estratégia de Estudo</h3>
+          <h3 className="font-bold text-lg text-gray-900 mb-4"> Estratégia de Estudo</h3>
           <div className="space-y-3 text-sm text-gray-700">
             <div className="flex gap-3">
-              <span className="text-2xl">1️⃣</span>
+              <span className="text-2xl">1️1-</span>
               <div>
                 <div className="font-semibold">Ciclo semanal consistente</div>
                 <div className="text-gray-600">Teoria (40%) + Matemática (30%) + Código (30%)</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-2xl">2️⃣</span>
+              <span className="text-2xl">2</span>
               <div>
                 <div className="font-semibold">Validação constante</div>
                 <div className="text-gray-600">Todo código deve reproduzir resultado conhecido</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-2xl">3️⃣</span>
+              <span className="text-2xl">3️</span>
               <div>
                 <div className="font-semibold">Checkpoints obrigatórios</div>
                 <div className="text-gray-600">Não avance sem completar marcos mensais</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-2xl">4️⃣</span>
+              <span className="text-2xl">4️</span>
               <div>
                 <div className="font-semibold">Junho = exploração</div>
                 <div className="text-gray-600">Ler literatura recente, testar ideias, definir IC</div>
@@ -1079,32 +1080,9 @@ const BrownianMastery = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-6">
-        <h3 className="font-bold text-amber-900 mb-3">⚡ Próximos Passos Imediatos (Esta Semana)</h3>
-        <div className="space-y-2 text-sm text-amber-800">
-          <div className="flex items-start gap-2">
-            <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-            <span><strong>Hoje:</strong> Instalar Python/Anaconda, testar Jupyter</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-            <span><strong>Amanhã:</strong> Buscar e baixar artigo de Einstein (1905) traduzido</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-            <span><strong>Esta semana:</strong> Implementar primeiro random walk 1D</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-            <span><strong>Até fim de Jan:</strong> Completar checkpoint do mês (intuição + simulações)</span>
-          </div>
-        </div>
-      </div>
-
+    </div>
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">📚 Bibliografia Completa do Plano</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Bibliografia Completa do Plano</h2>
         
         <div className="space-y-6">
           <div>
@@ -1112,25 +1090,25 @@ const BrownianMastery = () => {
             <div className="space-y-3">
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Gardiner, C. W. - "Stochastic Methods: A Handbook for the Natural and Social Sciences" (4th ed., 2009)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Fev-Mar | Caps 1-5 (Langevin, Fokker-Planck)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Fev-Mar | Caps 1-5 (Langevin, Fokker-Planck)</div>
                 <div className="text-sm text-gray-500 mt-1">Texto principal para dinâmica estocástica, muito acessível para físicos</div>
               </div>
               
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Van Kampen, N. G. - "Stochastic Processes in Physics and Chemistry" (3rd ed., 2007)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Abr | Caps 1-8 (Equação mestra, expansão sistemática)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Abr | Caps 1-8 (Equação mestra, expansão sistemática)</div>
                 <div className="text-sm text-gray-500 mt-1">Referência definitiva, rigoroso mas claro. Essencial para formalismo.</div>
               </div>
               
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Risken, H. - "The Fokker-Planck Equation: Methods of Solution and Applications" (2nd ed., 1996)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Mar | Caps 4-6 (Métodos de solução)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Mar | Caps 4-6 (Métodos de solução)</div>
                 <div className="text-sm text-gray-500 mt-1">Técnicas específicas para resolver Fokker-Planck em diversos contextos</div>
               </div>
               
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Schilling, R. L. & Partzsch, L. - "Brownian Motion: An Introduction to Stochastic Processes" (2nd ed., 2014)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Jan | Caps 1-3 (Definições, propriedades básicas)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Jan | Caps 1-3 (Definições, propriedades básicas)</div>
                 <div className="text-sm text-gray-500 mt-1">Abordagem mais matemática, mas acessível. Boa para entender construção rigorosa.</div>
               </div>
             </div>
@@ -1141,19 +1119,19 @@ const BrownianMastery = () => {
             <div className="space-y-3">
               <div className="bg-green-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Schroeder, D. V. - "An Introduction to Thermal Physics" (1999)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Jan-Fev, Mai | Caps 1-3, 6 (Temperatura, entropia, equipartição)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Jan-Fev, Mai | Caps 1-3, 6 (Temperatura, entropia, equipartição)</div>
                 <div className="text-sm text-gray-500 mt-1">Introdução muito didática, autossuficiente. Perfeito para começar.</div>
               </div>
               
               <div className="bg-green-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Pathria, R. K. & Beale, P. D. - "Statistical Mechanics" (3rd ed., 2011)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Mar-Mai | Caps 1-3, 14-15 (Ensembles, flutuações)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Mar-Mai | Caps 1-3, 14-15 (Ensembles, flutuações)</div>
                 <div className="text-sm text-gray-500 mt-1">Texto padrão de pós-graduação, completo e rigoroso</div>
               </div>
               
               <div className="bg-green-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Kubo, R., Toda, M. & Hashitsume, N. - "Statistical Physics II: Nonequilibrium Statistical Mechanics" (2nd ed., 1991)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Mai | Caps 1-3 (FDT, resposta linear)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Mai | Caps 1-3 (FDT, resposta linear)</div>
                 <div className="text-sm text-gray-500 mt-1">Clássico sobre flutuação-dissipação. Denso mas fundamental.</div>
               </div>
             </div>
@@ -1161,28 +1139,34 @@ const BrownianMastery = () => {
 
           <div>
             <h3 className="text-xl font-bold text-purple-900 mb-3">Matemática (Suporte)</h3>
-            <div className="space-y-3">
+             <div className="space-y-3">
               <div className="bg-purple-50 p-4 rounded-lg">
-                <div className="font-semibold text-gray-900">Bertsekas, D. P. & Tsitsiklis, J. N. - "Introduction to Probability" (2nd ed., 2008)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Jan-Abr | Caps 1-7 (Probabilidade básica, processos estocásticos)</div>
-                <div className="text-sm text-gray-500 mt-1">Muito claro, com exemplos. MIT OpenCourseWare tem vídeos complementares.</div>
-              </div>
+               <div className="font-semibold text-gray-900">Ross, S. - "A First Course in Probability" (9th ed., 2014)</div>
+               <div className="text-sm text-gray-600 mt-1">Usado em: Jan-Abr | Caps 2-7 (probabilidade, var. aleatórias, TCL, Markov)</div>
+               <div className="text-sm text-gray-500 mt-1">Texto principal para técnicas e exercícios. Muito didático.</div>
+             </div>
+
+            <div className="bg-purple-50 p-4 rounded-lg">
+             <div className="font-semibold text-gray-900">Jaynes, E.T. - "Probability Theory: The Logic of Science" (2003)</div>
+             <div className="text-sm text-gray-600 mt-1">Usado em: Jan-Abr | Caps 1-8 (lógica, inferência, transformações, informação)</div>
+             <div className="text-sm text-gray-500 mt-1">Leitura complementar para intuição física e abordagem Bayesiana. Escrito por físico.</div>
+            </div>
               
               <div className="bg-purple-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Boyce, W. E. & DiPrima, R. C. - "Elementary Differential Equations and Boundary Value Problems" (11th ed., 2017)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Fev-Mar | Caps 2-3 (EDO lineares, sistemas)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Fev-Mar | Caps 2-3 (EDO lineares, sistemas)</div>
                 <div className="text-sm text-gray-500 mt-1">Texto padrão para EDO, muito didático com muitos exercícios</div>
               </div>
               
               <div className="bg-purple-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Strauss, W. A. - "Partial Differential Equations: An Introduction" (2nd ed., 2007)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Mar | Caps 1-2 (Equação do calor, separação de variáveis)</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Mar | Caps 1-2 (Equação do calor, separação de variáveis)</div>
                 <div className="text-sm text-gray-500 mt-1">Apenas o necessário para entender difusão. Acessível.</div>
               </div>
               
               <div className="bg-purple-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Riley, K. F., Hobson, M. P. & Bence, S. J. - "Mathematical Methods for Physics and Engineering" (3rd ed., 2006)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Mar-Mai | Caps 13 (Fourier), funções de Green</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Mar-Mai | Caps 13 (Fourier), funções de Green</div>
                 <div className="text-sm text-gray-500 mt-1">Enciclopédico. Use como referência quando precisar de técnicas específicas.</div>
               </div>
             </div>
@@ -1193,25 +1177,25 @@ const BrownianMastery = () => {
             <div className="space-y-3">
               <div className="bg-amber-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Einstein, A. - "Investigations on the Theory of the Brownian Movement" (1905, tradução 1956)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Jan | Artigo original</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Jan | Artigo original</div>
                 <div className="text-sm text-gray-500 mt-1">Surpreendentemente acessível! Versão comentada disponível online.</div>
               </div>
               
               <div className="bg-amber-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Feynman, R. P. - "Six Easy Pieces" (1995)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Usado em: Jan | Capítulo sobre átomos em movimento</div>
+                <div className="text-sm text-gray-600 mt-1">Usado em: Jan | Capítulo sobre átomos em movimento</div>
                 <div className="text-sm text-gray-500 mt-1">Para intuição e motivação. Disponível em português.</div>
               </div>
               
               <div className="bg-amber-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Zwanzig, R. - "Nonequilibrium Statistical Mechanics" (2001)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Opcional em: Mai-Jun | Formalismo de projeção</div>
+                <div className="text-sm text-gray-600 mt-1">Opcional em: Mai-Jun | Formalismo de projeção</div>
                 <div className="text-sm text-gray-500 mt-1">Avançado. Apenas se interesse em aspectos formais.</div>
               </div>
               
               <div className="bg-amber-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Balakrishnan, V. - "Elements of Nonequilibrium Statistical Mechanics" (2008)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Opcional em: Mai-Jun | Alternativa ao Van Kampen</div>
+                <div className="text-sm text-gray-600 mt-1">Opcional em: Mai-Jun | Alternativa ao Van Kampen</div>
                 <div className="text-sm text-gray-500 mt-1">Mais moderno que Van Kampen, talvez mais acessível para alguns tópicos.</div>
               </div>
             </div>
@@ -1222,33 +1206,25 @@ const BrownianMastery = () => {
             <div className="space-y-3">
               <div className="bg-red-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Seifert, U. - "Stochastic thermodynamics, fluctuation theorems and molecular machines" (2012)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Reports on Progress in Physics 75, 126001</div>
+                <div className="text-sm text-gray-600 mt-1">Reports on Progress in Physics 75, 126001</div>
                 <div className="text-sm text-gray-500 mt-1">Review moderno sobre termodinâmica estocástica. ~80 páginas, muito completo.</div>
               </div>
               
               <div className="bg-red-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Bouchaud, J.-P. & Georges, A. - "Anomalous diffusion in disordered media" (1990)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Physics Reports 195, 127-293</div>
+                <div className="text-sm text-gray-600 mt-1">Physics Reports 195, 127-293</div>
                 <div className="text-sm text-gray-500 mt-1">Clássico sobre difusão anômala. Se interesse nessa área.</div>
               </div>
               
               <div className="bg-red-50 p-4 rounded-lg">
                 <div className="font-semibold text-gray-900">Hänggi, P., Talkner, P. & Borkovec, M. - "Reaction-rate theory: fifty years after Kramers" (1990)</div>
-                <div className="text-sm text-gray-600 mt-1">📖 Reviews of Modern Physics 62, 251</div>
+                <div className="text-sm text-gray-600 mt-1">Reviews of Modern Physics 62, 251</div>
                 <div className="text-sm text-gray-500 mt-1">Review sobre escape ativado e teoria de Kramers.</div>
               </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg border-l-4 border-blue-600">
-            <h4 className="font-bold text-gray-900 mb-2">💡 Dica: Como usar esta bibliografia</h4>
-            <div className="text-sm text-gray-700 space-y-1">
-              <p><strong>Não compre tudo de uma vez!</strong> Comece com Gardiner + Schroeder (disponíveis em PDF online)</p>
-              <p><strong>Bibliotecas universitárias:</strong> Maioria destes livros está disponível digitalmente via portal CAPES</p>
-              <p><strong>Prioridade:</strong> Gardiner, Van Kampen, e Pathria são os três pilares. Resto é suporte.</p>
-              <p><strong>Reviews/artigos:</strong> Todos disponíveis gratuitamente no arXiv ou via Sci-Hub</p>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>

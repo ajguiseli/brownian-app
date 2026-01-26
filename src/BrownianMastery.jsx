@@ -60,17 +60,17 @@ const BrownianMastery = () => {
             ]
           },
           math: {
-            title: 'Matemática necessária (4h/semana)',
+            title: 'Matemática (4h/semana)',
             tasks: [
               {
                 id: 'jan-m1',
                 item: 'Probabilidade básica: distribuição normal (gaussiana)',
-                resource: 'Bertsekas - Cap. 2 seções 2.1-2.4 (pgs 65-95) - variáveis aleatórias'
+                resource: 'Sheldon Ross - Cap. 3 seções 3.1.-3.5 (pgs 95-130) - var. aleatórias'
               },
               {
                 id: 'jan-m2',
-                item: 'Média, variância, valor esperado - cálculos práticos',
-                resource: 'Bertsekas - Cap. 3 seções 3.1-3.3 (pgs 125-155) - fazer exercícios 2.1-2.15'
+                item: 'Intição: Lógica da probabiliade e inferência',
+                resource: 'Jaynes - Caps 1-2 (pgs 1-45) - leitura conceitual'
               }
             ]
           },

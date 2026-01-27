@@ -31,727 +31,241 @@ const BrownianMastery = () => {
 
   const roadmap = [
   {
-    month: 'jan',
-    title: 'Janeiro 2026',
-    subtitle: 'Fundamentos conceituais do Browniano',
-    weeklyHours: '12-15h',
-    mainGoal: 'Movimento browniano: definição, propriedades, incrementos independentes, ⟨x²⟩ ∝ t',
+    month: "jan",
+    title: "Janeiro 2026",
+    subtitle: "Termodinâmica e Flutuações",
+    weeklyHours: "15h/sem",
+    mainGoal: "Entender o movimento browniano como manifestação direta de flutuações térmicas",
     topics: [
       {
-        week: 'Semanas 1-2',
+        title: "Termodinâmica",
+        hours: "6h/sem",
         theory: {
-          title: 'Física / Conceitos (5h/semana)',
+          title: "Fundamentos",
           tasks: [
             {
-              id: 'jan-t1',
-              item: 'Movimento browniano: definição e propriedades básicas',
-              resource: 'Schilling & Partzsch - Brownian Motion: Cap. 1 (pgs 1-30)'
+              id: "jan-t1",
+              item: "Temperatura, entropia e segunda lei",
+              resource: "Schroeder – Thermal Physics, caps 1–3"
             },
             {
-              id: 'jan-t2',
-              item: 'Incrementos independentes e propriedade de Markov',
-              resource: 'Schilling & Partzsch - Cap. 2 (pgs 31-60)'
+              id: "jan-t2",
+              item: "Distribuição de Boltzmann",
+              resource: "Schroeder – cap 3"
             },
             {
-              id: 'jan-t3',
-              item: 'Crescimento ⟨x²⟩ ∝ t - derivação e intuição',
-              resource: 'Schilling & Partzsch - Cap. 3 (pgs 61-90) - construção rigorosa'
+              id: "jan-t3",
+              item: "Flutuações em sistemas pequenos",
+              resource: "Schroeder – seções sobre flutuações"
             }
           ]
         },
-        math: {
-          title: 'Probabilidade - Fundação Lógica (4h/semana)',
-          tasks: [
-            {
-              id: 'jan-m1',
-              item: 'Probabilidade como inferência e incerteza física',
-              resource: 'Jaynes - Probability Theory: Caps 1-2 (pgs 1-50)'
-            },
-            {
-              id: 'jan-m2',
-              item: 'Variáveis aleatórias e espaços de probabilidade',
-              resource: 'Ross - A First Course in Probability: Cap. 2 (pgs 45-90)'
-            },
-            {
-              id: 'jan-m3',
-              item: 'Distribuições contínuas básicas',
-              resource: 'Ross - Cap. 3 seções 3.1-3.5 (pgs 95-130)'
-            }
-          ]
-        },
-        coding: {
-          title: 'Programação (6h/semana)',
-          tasks: [
-            {
-              id: 'jan-c1',
-              item: 'Implementar random walk 1D',
-              resource: 'Simular N passos, plotar trajetórias individuais'
-            },
-            {
-              id: 'jan-c2',
-              item: 'Medidas estatísticas: calcular ⟨x⟩ e ⟨x²⟩',
-              resource: 'Verificar ⟨x²⟩ ∝ t empiricamente com múltiplas realizações'
-            },
-            {
-              id: 'jan-c3',
-              item: 'Visualização de trajetórias e histogramas',
-              resource: 'Comparar distribuição de posições com gaussiana'
-            }
-          ]
-        },
-        checkpoint: 'Explicar o que é Browniano (física + matemática) • Conectar random walk discreto ao limite contínuo'
-      },
-      {
-        week: 'Semanas 3-4',
-        theory: {
-          title: 'Aprofundamento Conceitual (5h/semana)',
-          tasks: [
-            {
-              id: 'jan-t4',
-              item: 'Limite de escala: random walk → Browniano contínuo',
-              resource: 'Schilling & Partzsch - seções sobre convergência'
-            },
-            {
-              id: 'jan-t5',
-              item: 'Propriedades de caminhos: continuidade, não-diferenciabilidade',
-              resource: 'Schilling & Partzsch - propriedades quase-certas'
-            }
-          ]
-        },
-        math: {
-          title: 'Probabilidade Aplicada (4h/semana)',
-          tasks: [
-            {
-              id: 'jan-m4',
-              item: 'Valor esperado, variância, momentos',
-              resource: 'Ross - Cap. 4 (pgs 145-180)'
-            },
-            {
-              id: 'jan-m5',
-              item: 'Lei dos grandes números (conceitual)',
-              resource: 'Jaynes - seções sobre inferência estatística'
-            }
-          ]
-        },
-        coding: {
-          title: 'Programação (6h/semana)',
-          tasks: [
-            {
-              id: 'jan-c4',
-              item: 'Random walk 2D e 3D',
-              resource: 'Extensão natural, verificar isotropia'
-            },
-            {
-              id: 'jan-c5',
-              item: 'Convergência: comparar diferentes Δt',
-              resource: 'Observar convergência ao limite contínuo'
-            },
-            {
-              id: 'jan-c6',
-              item: 'Documentação: notebook Jupyter completo',
-              resource: 'Teoria + código + resultados + análise'
-            }
-          ]
-        },
-        checkpoint: 'Dominar a passagem discreto → contínuo - Simular e analisar trajetórias brownianas'
+        checkpoint: "Explicar Browniano como consequência da agitação térmica molecular"
       }
     ],
-    milestone: 'Explicar o que é Browniano - Conectar random walk ao limite contínuo'
+    milestone: "Browniano entendido como fenômeno termodinâmico"
   },
-  
+
   {
-    month: 'fev',
-    title: 'Fevereiro 2026',
-    subtitle: 'Langevin e emergência da gaussiana',
-    weeklyHours: '12-15h',
-    mainGoal: 'Dinâmica estocástica: Langevin, ruído branco, emergência da distribuição gaussiana',
+    month: "fev",
+    title: "Fevereiro 2026",
+    subtitle: "Transporte e Dissipação",
+    weeklyHours: "15h/sem",
+    mainGoal: "Conectar flutuações térmicas à dissipação via Langevin",
     topics: [
       {
-        week: 'Semanas 1-2',
+        title: "Dinâmica Estocástica",
+        hours: "5h/sem",
         theory: {
-          title: 'Dinâmica Estocástica (6h/semana)',
+          title: "Equação de Langevin",
           tasks: [
             {
-              id: 'fev-t1',
-              item: 'Equação de Langevin: derivação e interpretação física',
-              resource: 'Gardiner - Stochastic Methods: Caps 1-2 (pgs 1-70)'
+              id: "fev-l1",
+              item: "Equação de Langevin: arrasto + ruído",
+              resource: "Gardiner – caps 1–3"
             },
             {
-              id: 'fev-t2',
-              item: 'Ruído branco e correlações temporais',
-              resource: 'Gardiner - Cap. 3 seções 3.1-3.3 (pgs 71-100)'
+              id: "fev-l2",
+              item: "Teorema Flutuação-Dissipação",
+              resource: "Derivação física do FDT"
             },
             {
-              id: 'fev-t3',
-              item: 'Teorema de flutuação-dissipação (introdutório)',
-              resource: 'Gardiner - seção sobre FDT'
-            }
-          ]
-        },
-        math: {
-          title: 'Probabilidade Contínua (4h/semana)',
-          tasks: [
-            {
-              id: 'fev-m1',
-              item: 'Variáveis aleatórias contínuas',
-              resource: 'Ross - Cap. 4 (esperança, variância)'
-            },
-            {
-              id: 'fev-m2',
-              item: 'Distribuição normal/gaussiana',
-              resource: 'Ross - Cap. 5 seção 5.4 (pgs 210-235)'
-            },
-            {
-              id: 'fev-m3',
-              item: 'Princípio de máxima entropia',
-              resource: 'Jaynes - Cap. 11 (pgs 340-380) - por que gaussiana?'
+              id: "fev-l3",
+              item: "Relação de Einstein D = kT/γ",
+              resource: "Gardiner – seção correspondente"
             }
           ]
         },
         coding: {
-          title: 'Programação (5h/semana)',
+          title: "Simulações",
           tasks: [
             {
-              id: 'fev-c1',
-              item: 'Implementar Langevin (Euler-Maruyama)',
-              resource: 'dv/dt = -γv + √(2γkT) ξ(t)'
+              id: "fev-c1",
+              item: "Implementar Langevin (Euler-Maruyama)",
+              resource: "dv/dt = -γv + √(2γkT) ξ(t)"
             },
             {
-              id: 'fev-c2',
-              item: 'Verificação: ⟨v²⟩ = kT/m (equipartição)',
-              resource: 'Simular partícula livre, medir temperatura efetiva'
+              id: "fev-c2",
+              item: "Medir D e γ independentemente"
             },
             {
-              id: 'fev-c3',
-              item: 'Histogramas: distribuição de velocidades',
-              resource: 'Comparar com distribuição de Maxwell-Boltzmann'
+              id: "fev-c3",
+              item: "Verificar D = kT/γ numericamente"
             }
           ]
         },
-        checkpoint: 'Justificar física e probabilisticamente o ruído gaussiano'
-      },
-      {
-        week: 'Semanas 3-4',
-        theory: {
-          title: 'Aprofundamento (6h/semana)',
-          tasks: [
-            {
-              id: 'fev-t4',
-              item: 'Solução analítica de Langevin',
-              resource: 'Gardiner - derivação completa para partícula livre'
-            },
-            {
-              id: 'fev-t5',
-              item: 'Regimes: overdamped vs underdamped',
-              resource: 'Gardiner - análise de diferentes escalas de tempo'
-            }
-          ]
-        },
-        math: {
-          title: 'Ferramentas Matemáticas (3h/semana)',
-          tasks: [
-            {
-              id: 'fev-m4',
-              item: 'EDO lineares de primeira ordem (revisão)',
-              resource: 'Resolver equações com termo forçante aleatório'
-            }
-          ]
-        },
-        coding: {
-          title: 'Programação (6h/semana)',
-          tasks: [
-            {
-              id: 'fev-c4',
-              item: 'Langevin em potencial harmônico',
-              resource: 'Adicionar força F = -kx, verificar distribuição estacionária'
-            },
-            {
-              id: 'fev-c5',
-              item: 'Comparação analítico vs numérico',
-              resource: 'Validar código contra soluções conhecidas'
-            },
-            {
-              id: 'fev-c6',
-              item: 'Estudo paramétrico: variar γ e T',
-              resource: 'Mapear comportamento em diferentes regimes'
-            }
-          ]
-        },
-        checkpoint: 'Resolver e simular Langevin - Validar equipartição numericamente'
+        checkpoint: "Conectar dissipação com flutuações"
       }
     ],
-    milestone: 'Justificar ruído gaussiano - Resolver e simular Langevin'
+    milestone: "Langevin dominado e validado numericamente"
   },
-  
+
   {
-    month: 'mar',
-    title: 'Março 2026',
-    subtitle: 'Fokker-Planck e métodos de solução',
-    weeklyHours: '15-18h',
-    mainGoal: 'Equação de Fokker-Planck: derivação, solução, conexão com Langevin',
+    month: "mar",
+    title: "Março 2026",
+    subtitle: "Fokker–Planck e Termodinâmica",
+    weeklyHours: "17h/sem",
+    mainGoal: "Entender evolução temporal de distribuições de probabilidade",
     topics: [
       {
-        week: 'Semanas 1-2',
+        title: "Fokker–Planck",
+        hours: "6h/sem",
         theory: {
-          title: 'Dinâmica Estocástica (7h/semana)',
+          title: "Equação de Fokker–Planck",
           tasks: [
             {
-              id: 'mar-t1',
-              item: 'Equação de Fokker-Planck: derivação',
-              resource: 'Gardiner - Caps 4-5 (pgs 120-180)'
+              id: "mar-f1",
+              item: "FPE como conservação de probabilidade",
+              resource: "Gardiner – caps 4–5"
             },
             {
-              id: 'mar-t2',
-              item: 'Conexão Langevin ↔ Fokker-Planck',
-              resource: 'Gardiner - demonstração da equivalência'
+              id: "mar-f2",
+              item: "Métodos de solução",
+              resource: "Risken – caps 4–6"
             },
             {
-              id: 'mar-t3',
-              item: 'Métodos de solução analíticos',
-              resource: 'Risken - The Fokker-Planck Equation: Caps 4-6 (pgs 85-180)'
-            }
-          ]
-        },
-        math: {
-          title: 'Matemática Aplicada (5h/semana)',
-          tasks: [
-            {
-              id: 'mar-m1',
-              item: 'Equação do calor (EDP parabólica)',
-              resource: 'Solução por separação de variáveis'
-            },
-            {
-              id: 'mar-m2',
-              item: 'Solução gaussiana da difusão',
-              resource: 'P(x,t) = (4πDt)^(-1/2) exp(-x²/4Dt)'
-            },
-            {
-              id: 'mar-m3',
-              item: 'Transformada de Fourier aplicada',
-              resource: 'Resolver EDP no espaço de Fourier'
+              id: "mar-f3",
+              item: "Solução estacionária",
+              resource: "P_st ∝ exp(-V/kT)"
             }
           ]
         },
         coding: {
-          title: 'Programação (6h/semana)',
+          title: "Solver Numérico",
           tasks: [
             {
-              id: 'mar-c1',
-              item: 'Solver numérico da Fokker-Planck',
-              resource: 'Diferenças finitas (Crank-Nicolson ou explícito)'
+              id: "mar-c1",
+              item: "Resolver FPE via diferenças finitas",
+              resource: "Crank–Nicolson"
             },
             {
-              id: 'mar-c2',
-              item: 'Comparação: Langevin vs FPE',
-              resource: 'Histogramas de Langevin devem coincidir com P(x,t) da FPE'
-            },
-            {
-              id: 'mar-c3',
-              item: 'Validação: difusão livre',
-              resource: 'Comparar solução numérica com gaussiana analítica'
+              id: "mar-c2",
+              item: "Verificar relaxação até Boltzmann"
             }
           ]
         },
-        checkpoint: 'Derivar FPE a partir de Langevin • Implementar solver numérico'
-      },
-      {
-        week: 'Semanas 3-4',
-        theory: {
-          title: 'Aplicações (7h/semana)',
-          tasks: [
-            {
-              id: 'mar-t4',
-              item: 'Fokker-Planck em potenciais',
-              resource: 'Risken - métodos para diferentes V(x)'
-            },
-            {
-              id: 'mar-t5',
-              item: 'Distribuição estacionária: P_st ∝ exp(-V/kT)',
-              resource: 'Risken - conexão com mecânica estatística'
-            },
-            {
-              id: 'mar-t6',
-              item: 'Tempo de relaxação e modos normais',
-              resource: 'Risken - análise espectral'
-            }
-          ]
-        },
-        math: {
-          title: 'Ferramentas Avançadas (4h/semana)',
-          tasks: [
-            {
-              id: 'mar-m4',
-              item: 'Autofunções e autovalores',
-              resource: 'Decomposição espectral da FPE'
-            },
-            {
-              id: 'mar-m5',
-              item: 'Funções de Green',
-              resource: 'Propagador da equação de difusão'
-            }
-          ]
-        },
-        coding: {
-          title: 'Programação (7h/semana)',
-          tasks: [
-            {
-              id: 'mar-c4',
-              item: 'FPE em potencial harmônico',
-              resource: 'Verificar P_st = exp(-kx²/2kT)'
-            },
-            {
-              id: 'mar-c5',
-              item: 'FPE em potencial duplo poço',
-              resource: 'Observar distribuição bimodal'
-            },
-            {
-              id: 'mar-c6',
-              item: 'Biblioteca de código: módulos reutilizáveis',
-              resource: 'Organizar solvers, potenciais, análises'
-            }
-          ]
-        },
-        checkpoint: 'Explicar por que P é gaussiana - Resolver FPE em pelo menos um sistema'
+        checkpoint: "Mostrar que P_st minimiza energia livre"
       }
     ],
-    milestone: 'Explicar gaussiana - Resolver FPE com potenciais'
+    milestone: "Fokker–Planck dominada como descrição estatística"
   },
-  
+
   {
-    month: 'abr',
-    title: 'Abril 2026',
-    subtitle: 'Formalismo e equação mestra',
-    weeklyHours: '15-18h',
-    mainGoal: 'Processos estocásticos formais: equação mestra, passagem micro → macro',
+    month: "abr",
+    title: "Abril 2026",
+    subtitle: "Processos Irreversíveis",
+    weeklyHours: "17h/sem",
+    mainGoal: "Derivar irreversibilidade a partir de dinâmica microscópica",
     topics: [
       {
-        week: 'Semanas 1-2',
+        title: "Não-Equilíbrio",
+        hours: "8h/sem",
         theory: {
-          title: 'Formalismo (8h/semana)',
+          title: "FDT e resposta linear",
           tasks: [
             {
-              id: 'abr-t1',
-              item: 'Processos de Markov: definições rigorosas',
-              resource: 'van Kampen - Stochastic Processes: Caps 1-2 (leitura seletiva)'
+              id: "abr-n1",
+              item: "Teorema Flutuação-Dissipação completo",
+              resource: "Kubo – Statistical Physics II"
             },
             {
-              id: 'abr-t2',
-              item: 'Equação mestra',
-              resource: 'van Kampen - Caps 3-4 (derivação e exemplos)'
-            },
-            {
-              id: 'abr-t3',
-              item: 'Expansão de Kramers-Moyal',
-              resource: 'van Kampen - Cap. 5 (quando truncar?)'
+              id: "abr-n2",
+              item: "Funções de correlação e susceptibilidade"
             }
           ]
         },
-        math: {
-          title: 'Probabilidade Aplicada (4h/semana)',
-          tasks: [
-            {
-              id: 'abr-m1',
-              item: 'Processos de Markov em tempo contínuo',
-              resource: 'Ross - Cap. 6 (processos de Poisson e generalizações)'
-            },
-            {
-              id: 'abr-m2',
-              item: 'Matrizes de transição e autovalores',
-              resource: 'Análise espectral de processos discretos'
-            }
-          ]
-        },
-        coding: {
-          title: 'Programação (5h/semana)',
-          tasks: [
-            {
-              id: 'abr-c1',
-              item: 'Processos de salto (jump processes)',
-              resource: 'Implementar evolução via equação mestra discreta'
-            },
-            {
-              id: 'abr-c2',
-              item: 'Algoritmo de Gillespie',
-              resource: 'Simulação estocástica exata para sistemas químicos'
-            }
-          ]
-        },
-        checkpoint: 'Entender equação mestra - Implementar processos de salto'
-      },
-      {
-        week: 'Semanas 3-4',
-        theory: {
-          title: 'Limite Contínuo (8h/semana)',
-          tasks: [
-            {
-              id: 'abr-t4',
-              item: 'Passagem equação mestra → Fokker-Planck',
-              resource: 'van Kampen - Caps 6-8 (expansão sistemática)'
-            },
-            {
-              id: 'abr-t5',
-              item: 'Condições de validade da aproximação',
-              resource: 'van Kampen - quando a FPE é válida?'
-            },
-            {
-              id: 'abr-t6',
-              item: 'Ω-expansion: macro + flutuações',
-              resource: 'van Kampen - separação de escalas'
-            }
-          ]
-        },
-        math: {
-          title: 'Ferramentas (3h/semana)',
-          tasks: [
-            {
-              id: 'abr-m3',
-              item: 'Funções geradoras',
-              resource: 'van Kampen - Apêndice (técnica poderosa)'
-            }
-          ]
-        },
-        coding: {
-          title: 'Programação (6h/semana)',
-          tasks: [
-            {
-              id: 'abr-c3',
-              item: 'Comparação: mestra discreta vs FPE contínua',
-              resource: 'Observar convergência no limite de escala'
-            },
-            {
-              id: 'abr-c4',
-              item: 'Validação: sistema simples (A ⇌ B)',
-              resource: 'Verificar que FPE é boa aproximação'
-            }
-          ]
-        },
-        checkpoint: 'Defender passagem micro → macro - Explicar origem da FPE'
+        checkpoint: "Derivar FDT a partir de reversibilidade microscópica"
       }
     ],
-    milestone: 'Defender micro → macro - Explicar origem da FPE via equação mestra'
+    milestone: "Irreversibilidade compreendida formalmente"
   },
-  
+
   {
-    month: 'mai',
-    title: 'Maio 2026',
-    subtitle: 'Consolidação e projeto de IC',
-    weeklyHours: '15-18h',
-    mainGoal: 'Flutuação-dissipação • Projeto aplicado • Preparação para IC',
+    month: "mai",
+    title: "Maio 2026",
+    subtitle: "Teoremas de Flutuação Modernos",
+    weeklyHours: "17h/sem",
+    mainGoal: "Aplicar termodinâmica estocástica a sistemas reais",
     topics: [
       {
-        week: 'Semanas 1-2',
+        title: "Termodinâmica Estocástica",
+        hours: "10h/sem",
         theory: {
-          title: 'Física Estatística (7h/semana)',
+          title: "Flutuação moderna",
           tasks: [
             {
-              id: 'mai-t1',
-              item: 'Teorema de flutuação-dissipação (FDT)',
-              resource: 'Gardiner - capítulos correspondentes'
+              id: "mai-s1",
+              item: "Review de Seifert (2012)",
+              resource: "Rep. Prog. Phys."
             },
             {
-              id: 'mai-t2',
-              item: 'Relação de Einstein: D = kT/γ',
-              resource: 'Gardiner - derivação e aplicações'
-            },
-            {
-              id: 'mai-t3',
-              item: 'Máxima entropia em mecânica estatística',
-              resource: 'Jaynes - aplicações ao equilíbrio térmico'
+              id: "mai-s2",
+              item: "Teoremas de Jarzynski e Crooks"
             }
           ]
         },
-        project: {
-          title: 'Escolha de Sistema (6h/semana)',
-          tasks: [
-            {
-              id: 'mai-p1',
-              item: 'Definir sistema para projeto: harmônico / duplo poço / Kramers',
-              resource: 'Discutir com orientador viabilidade e interesse'
-            },
-            {
-              id: 'mai-p2',
-              item: 'Revisão bibliográfica do sistema escolhido',
-              resource: 'Ler 5-10 artigos relevantes'
-            }
-          ]
-        },
-        coding: {
-          title: 'Implementação (5h/semana)',
-          tasks: [
-            {
-              id: 'mai-c1',
-              item: 'Implementar sistema escolhido',
-              resource: 'Langevin + FPE para o mesmo problema'
-            },
-            {
-              id: 'mai-c2',
-              item: 'Análise preliminar de resultados',
-              resource: 'Explorar parâmetros, identificar regimes'
-            }
-          ]
-        },
-        checkpoint: 'Sistema implementado • Primeiros resultados obtidos'
-      },
-      {
-        week: 'Semanas 3-4',
-        theory: {
-          title: 'Consolidação (5h/semana)',
-          tasks: [
-            {
-              id: 'mai-t4',
-              item: 'Revisar conceitos fundamentais',
-              resource: 'Preencher lacunas identificadas'
-            },
-            {
-              id: 'mai-t5',
-              item: 'Conectar diferentes abordagens',
-              resource: 'Random walk → Langevin → FPE → Mestra'
-            }
-          ]
-        },
-        project: {
-          title: 'Análise e Escrita (8h/semana)',
-          tasks: [
-            {
-              id: 'mai-p3',
-              item: 'Análise completa do sistema',
-              resource: 'Resultados numéricos + comparação com teoria'
-            },
-            {
-              id: 'mai-p4',
-              item: 'Escrever relatório (5-8 páginas)',
-              resource: 'Introdução + Métodos + Resultados + Discussão'
-            },
-            {
-              id: 'mai-p5',
-              item: 'Preparar figuras publication-ready',
-              resource: '6-10 figuras bem legendadas'
-            }
-          ]
-        },
-        coding: {
-          title: 'Finalização (5h/semana)',
-          tasks: [
-            {
-              id: 'mai-c3',
-              item: 'Código limpo e documentado',
-              resource: 'Docstrings, README, exemplos'
-            },
-            {
-              id: 'mai-c4',
-              item: 'Repositório GitHub organizado',
-              resource: 'Estrutura profissional, versionamento'
-            }
-          ]
-        },
-        checkpoint: 'Relatório completo - Código validado e documentado'
+        checkpoint: "Aplicar teoremas de flutuação numericamente"
       }
     ],
-    milestone: ' Material pronto para IC formal - Sistema analisado completamente'
+    milestone: "Ferramentas modernas dominadas"
   },
-  
+
   {
-    month: 'jun',
-    title: 'Junho 2026',
-    subtitle: 'Transição para IC',
-    weeklyHours: '15-18h',
-    mainGoal: 'Definir tema de IC • Escrever proposta formal • Base consolidada',
+    month: "jun",
+    title: "Junho 2026",
+    subtitle: "Síntese e IC",
+    weeklyHours: "18h/sem",
+    mainGoal: "Consolidar e definir projeto de iniciação científica",
     topics: [
       {
-        week: 'Semanas 1-2',
-        theory: {
-          title: 'Exploração de Literatura (8h/semana)',
-          tasks: [
-            {
-              id: 'jun-t1',
-              item: 'Ler 10-15 artigos recentes (2020-2025)',
-              resource: 'ArXiv: cond-mat.stat-mech, Physical Review E'
-            },
-            {
-              id: 'jun-t2',
-              item: 'Identificar problemas em aberto',
-              resource: 'Listar 3-5 direções possíveis para IC'
-            },
-            {
-              id: 'jun-t3',
-              item: 'Discussões com orientador',
-              resource: 'Apresentar opções e decidir foco'
-            }
-          ]
-        },
-        exploration: {
-          title: 'Experimentação (7h/semana)',
-          tasks: [
-            {
-              id: 'jun-e1',
-              item: 'Reproduzir resultados de 2-3 artigos',
-              resource: 'Validar compreensão e código'
-            },
-            {
-              id: 'jun-e2',
-              item: 'Explorar variações e extensões',
-              resource: 'Buscar comportamentos novos'
-            }
-          ]
-        },
-        checkpoint: 'Tema de IC definido - Compreensão do estado da arte'
-      },
-      {
-        week: 'Semanas 3-4',
-        theory: {
-          title: 'Consolidação Final (5h/semana)',
-          tasks: [
-            {
-              id: 'jun-t4',
-              item: 'Leitura focada no tema escolhido',
-              resource: '10 artigos chave + reviews'
-            },
-            {
-              id: 'jun-t5',
-              item: 'Estudar metodologias específicas',
-              resource: 'Técnicas que serão usadas na IC'
-            }
-          ]
-        },
+        title: "Síntese",
+        hours: "8h/sem",
         writing: {
-          title: 'Proposta de IC (10h/semana)',
+          title: "Documento",
           tasks: [
             {
-              id: 'jun-w1',
-              item: 'Escrever proposta formal (CNPq/FAPESP)',
-              resource: 'Introdução + Objetivos + Metodologia + Cronograma'
+              id: "jun-w1",
+              item: "Escrever síntese de 10 páginas"
             },
             {
-              id: 'jun-w2',
-              item: 'Bibliografia anotada (30-40 referências)',
-              resource: 'Organizar por subtema'
-            },
-            {
-              id: 'jun-w3',
-              item: 'Plano de trabalho detalhado (12 meses)',
-              resource: 'Metas trimestrais + deliverables'
-            },
-            {
-              id: 'jun-w4',
-              item: 'Revisão com orientador',
-              resource: 'Iterar até versão final'
+              id: "jun-w2",
+              item: "Preparar apresentação"
             }
           ]
         },
-        checkpoint: 'Proposta de IC completa e aprovada'
+        checkpoint: "Proposta de IC pronta para submissão"
       }
     ],
-    milestone: 'Base fechada - Código validado - Proposta de IC pronta para Agosto'
+    milestone: "Projeto de IC definido e estruturado"
   }
 ];
-
- const milestones = [
-  { month: 'Jan', achievement: 'Explicar Browniano - Random walk → contínuo' },
-  { month: 'Fev', achievement: 'Langevin resolvido - Ruído gaussiano justificado' },
-  { month: 'Mar', achievement: 'FPE dominada - Solver numérico funcionando' },
-  { month: 'Abr', achievement: 'Formalismo: micro → macro defendido' },
-  { month: 'Mai', achievement: 'Projeto completo - Código + relatório' },
-  { month: 'Jun', achievement: 'Proposta de IC pronta' }
+const milestones = [
+  { month: 'Jan', achievement: 'Browniano entendido como fenômeno termodinâmico' },
+  { month: 'Fev', achievement: 'Langevin dominado e validado numericamente' },
+  { month: 'Mar', achievement: 'Fokker-Planck dominada como descrição estatística' },
+  { month: 'Abr', achievement: 'Irreversibilidade compreendida formalmente' },
+  { month: 'Mai', achievement: 'Ferramentas modernas dominadas' },
+  { month: 'Jun', achievement: 'Projeto de IC definido e estruturado' }
 ];
 
 
